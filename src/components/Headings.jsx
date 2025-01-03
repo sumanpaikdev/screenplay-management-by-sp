@@ -1,5 +1,10 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
+import gmailIcon from "../logoPicture/gmail.png";
+import userIcon from "../logoPicture/user.png";
+
 const Headings = () => (
   <div className="bg-white dark:bg-gray-900 flex flex-col items-center justify-center pb-4 pt-24">
     <p className="mb-4 text-4xl leading-none tracking-tight text-gray-900 md:text-5xl lg:text-7xl dark:text-white text-center font-philo">
@@ -8,27 +13,26 @@ const Headings = () => (
     <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400 text-center">
       MOVIES | WEB SERIES
     </p>
+    <div className="flex flex-row items-center justify-center">
+
     <a
-      href="/"
-      className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+      className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800      
+       focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 mr-1"
+      href="mailto:reachout.suman@gmail.com"
     >
-      Learn more
-      <svg
-        className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 14 10"
-      >
-        <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M1 5h12m0 0L9 1m4 4L9 9"
-        />
-      </svg>
+      <img className="w-6 mr-[10px]" src={gmailIcon} alt="gmail" />
+      Send Email
     </a>
+    <Link
+      to="/about"
+      className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800      
+       focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 ml-1"
+    >
+      <img className="w-6 mr-2 dark:invert invert-1 " src={userIcon} alt="gmail" />
+      Learn more
+        
+    </Link>
+    </div>
   </div>
 );
 

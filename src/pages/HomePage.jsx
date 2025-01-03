@@ -14,7 +14,7 @@ import Footer from "../components/Footer"
 const HomePage = () => {
 
   return (
-    <div className="">
+    <div className="bg-white dark:bg-gray-900">
       <Navbar />
       <Headings/>
       <ActiveProject/>

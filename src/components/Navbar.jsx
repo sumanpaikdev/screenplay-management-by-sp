@@ -10,8 +10,8 @@ const Navbar = () => (
             className="h-8"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-lg font-philo whitespace-nowrap dark:text-white">
-          <span className="text-blue-600">Sp</span>.SCREENPLAY
+          <span className="self-center sm:text-lg text-sm font-philo whitespace-nowrap dark:text-white">
+          <span className="text-blue-500">Sp</span>.SCREENPLAY
           </span>
         </a>
         {/* <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
