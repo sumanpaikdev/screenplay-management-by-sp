@@ -5,7 +5,7 @@ import splogo from "../logoPicture/sp.jpg";
 const Navbar = () => (
   <div className="">
     {/* <nav className="bg-white border-gray-200 dark:bg-gray-900 fixed block w-full z-30"> */}
-    <nav className="dark:text-gray-900 border-gray-200 backdrop-blur-md dark:text-white fixed block w-full z-30">
+    <nav className=" border-gray-200 backdrop-blur-md dark:text-gray-900 fixed block w-full z-30">
 
       <div className="flex flex-wrap items-center justify- py-3 px-4 w-full sm:px-8">
         <div className="flex flex-row items-center justify-between w-full">

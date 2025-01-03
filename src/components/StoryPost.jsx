@@ -4,12 +4,22 @@ import { Link } from "react-router-dom";
 import data from "../data/data.json";
 
 const StoryPost = () => {
-
   const reversedBlogs = [...data.blogs].reverse();
 
   return (
     <div className="bg-white dark:bg-gray-900 flex flex-col items-center justify-center py-6 px-4 border-none outline-none">
       <ol className="relative border-s border-gray-200 dark:border-gray-700 max-w-[800px]">
+        <div role="status" class="max-w-xl animate-pulse ml-4 -mb-3">
+          {/* Default skeleton  */}
+          <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+          <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+          <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+          <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[400px] mb-2.5"></div>
+          <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5"></div>
+          {/* <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div> */}
+          <span class="sr-only">Loading...</span>
+        </div>
+
         {reversedBlogs.map((blogsData) => (
           <li key={blogsData.id} className="mb-1 ms-4 mt-10">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-2 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
