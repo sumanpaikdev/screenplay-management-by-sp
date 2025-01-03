@@ -16,7 +16,7 @@ const ActiveProjectCard = ({ picture }) => (
           {picture.genre}
         </p>
         <p className="text-sm mt-3 font-bold font-philo text-center text-blue-600 uppercase flex items-center justify-between">
-        <span className="animate-pulse">{picture.status}</span><span className="bg-white dark:bg-gray-900 w-3 h-3 rounded-full p-3 ml-4 text-lg text-black animate-bounce dark:text-white backdrop-blur-lg flex justify-center items-center z-10 font-normal">{picture.id} </span>
+        <span className="animate-pulse">{picture.status}</span><span className="bg-white dark:bg-gray-900 w-3 h-3 rounded-full p-3 ml-4 text-md text-black animate-bounce dark:text-white backdrop-blur-lg flex justify-center items-center z-10 font-normal">{picture.id} </span>
         </p>
       </div>
     </div>
