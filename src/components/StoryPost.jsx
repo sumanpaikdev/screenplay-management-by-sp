@@ -8,7 +8,7 @@ const StoryPost = () => {
   const reversedBlogs = [...data.blogs].reverse();
 
   return (
-    <div className="bg-gray-900 dark:bg-gray-900 flex flex-col items-center justify-center py-6 px-4 border-none outline-none">
+    <div className="bg-white dark:bg-gray-900 flex flex-col items-center justify-center py-6 px-4 border-none outline-none">
       <ol className="relative border-s border-gray-200 dark:border-gray-700 max-w-[800px]">
         {reversedBlogs.map((blogsData) => (
           <li key={blogsData.id} className="mb-1 ms-4 mt-10">

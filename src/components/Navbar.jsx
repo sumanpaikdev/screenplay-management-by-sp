@@ -1,19 +1,24 @@
 import React from "react";
 
+import splogo from "../logoPicture/sp.jpg";
+
 const Navbar = () => (
   <div className="">
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 fixed block w-full z-30">
-      <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-4 py-4 px-0">
-        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center sm:text-lg text-sm font-philo whitespace-nowrap dark:text-white">
-          <span className="text-blue-500">Sp</span>.SCREENPLAY
-          </span>
-        </a>
+    {/* <nav className="bg-white border-gray-200 dark:bg-gray-900 fixed block w-full z-30"> */}
+    <nav className="dark:text-gray-900 border-gray-200 backdrop-blur-md dark:text-white fixed block w-full z-30">
+
+      <div className="flex flex-wrap items-center justify- py-3 px-4 w-full sm:px-8">
+        <div className="flex flex-row items-center justify-between w-full">
+          {/* <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse"> */}
+
+          {/* </a> */}
+          <div>
+            <span className="self-center sm:text-lg text-sm font-philo whitespace-nowrap dark:text-white">
+              <span className="text-blue-500">Sp</span>.SCREENPLAY
+            </span>
+          </div>
+          <img src={splogo} className="h-9 w-9 rounded-full" alt="Flowbite Logo" />
+        </div>
         {/* <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
             <a href="/" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Login</a>
             <a href="/" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Sign up</a>

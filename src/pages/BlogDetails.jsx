@@ -76,17 +76,17 @@ const BlogDetails = () => {
 
       <p
         className="mb-3 text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-normal first-   
-       letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start max-w-[800px] mx-2 mt-2 relative"
+       letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start max-w-[800px] mx-2 mt-2 relative mt-3"
       >
         <span className="font-philo font-semibold">SYNOPSIS: </span>
         <br />
-        <img src={ink} alt="img" className=" absolute top-[-.4rem] left-[8.3rem] w-7 h-7 dark:invert invert-1 opacity-70" /> {blog.details}
+        <img src={ink} alt="img" className=" absolute top-[-.4rem] left-[8.3rem] w-7 h-7 dark:invert invert-1 opacity-65" /> {blog.details}
       </p>
       {/* <p className="text-md font-semibold">SYNOPSIS:</p> */}
       {/* <p className="mt-2 max-w-[800px] text-md text mx-2">{blog.details}</p> */}
       <Link
         to="/"
-        className="selected-none flex flex-row items-center justify-center px-3 py-2 rounded-md bg-gray text-white opacity-90 text-md mt-4 mb-21 border-2 bg-gray-900 sm:hover:-translate-x-4 duration-300 "
+        className="selected-none flex flex-row items-center justify-center px-3 py-3 rounded-md bg-gray text-white opacity-90 text-md mt-4 mb-21 border-2 bg-gray-900 sm:hover:-translate-x-4 duration-300 "
       >
         <img
           className=" w-4 mr-3 invert animate-pulse"

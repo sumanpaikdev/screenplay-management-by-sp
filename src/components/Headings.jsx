@@ -28,8 +28,8 @@ const Headings = () => (
       className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800      
        focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 ml-1"
     >
-      <img className="w-6 mr-2 dark:invert invert-1 " src={userIcon} alt="gmail" />
-      Learn more
+      <img className="w-6 mr-2 invert dark:invert-1 animate-pulse" src={userIcon} alt="usr" />
+      About Me
         
     </Link>
     </div>

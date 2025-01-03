@@ -49,7 +49,7 @@ const AboutMe = () => {
           href="https://www.instagram.com/sumanpaik_/"
         >
           <img
-            className="w-6 ml-[5px] mr-3 dark:invert invert-1"
+            className="w-6 ml-[5px] mr-3 invert"
             src={instalogo}
             alt="gmail"
           />
@@ -61,11 +61,11 @@ const AboutMe = () => {
           href="mailto:reachout.suman@gmail.com"
         >
           <img
-            className="w-6 ml-[5px] mr-3 dark:invert invert-1"
+            className="w-6 ml-[5px] mr-3 invert"
             src={gmllogo}
             alt="gmail"
           />
-          Suman Paik
+          Mail to Suman Paik
         </a>
         <a
           className="inline-flex items-center justify-start px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800      
